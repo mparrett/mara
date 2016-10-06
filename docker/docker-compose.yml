@@ -8,7 +8,7 @@ services:
   nginx:
     build: ./nginx
     volumes:
-      - ./web:/var/www/html
+      - ../web:/var/www/html
     links:
         - worker1:worker1
         - falcon:falcon
