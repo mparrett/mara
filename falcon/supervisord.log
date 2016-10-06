@@ -1,0 +1,253 @@
+2016-05-19 21:43:04,594 CRIT Supervisor running as root (no user in config file)
+2016-05-19 21:43:04,622 INFO supervisord started with pid 1
+2016-05-19 21:43:05,628 INFO spawned: 'app' with pid 9
+2016-05-19 21:43:07,052 INFO success: app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-05-19 21:43:32,977 WARN received SIGTERM indicating exit request
+2016-05-19 21:43:32,978 INFO waiting for app to die
+2016-05-19 21:43:35,989 INFO waiting for app to die
+2016-05-19 21:43:38,994 INFO waiting for app to die
+2016-05-19 21:43:41,998 INFO waiting for app to die
+2016-05-19 21:44:33,075 CRIT Supervisor running as root (no user in config file)
+2016-05-19 21:44:33,080 INFO supervisord started with pid 1
+2016-05-19 21:44:34,088 INFO spawned: 'app' with pid 9
+2016-05-19 21:44:35,502 INFO success: app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-05-19 21:45:29,292 WARN received SIGTERM indicating exit request
+2016-05-19 21:45:29,293 INFO waiting for app to die
+2016-05-19 21:45:32,301 INFO waiting for app to die
+2016-05-19 21:45:35,306 INFO waiting for app to die
+2016-05-19 21:45:38,310 INFO waiting for app to die
+2016-05-19 22:05:56,969 CRIT Supervisor running as root (no user in config file)
+2016-05-19 22:05:56,975 INFO supervisord started with pid 1
+2016-05-19 22:05:57,979 INFO spawned: 'app' with pid 11
+2016-05-19 22:05:59,205 INFO success: app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-05-19 22:06:27,558 WARN received SIGTERM indicating exit request
+2016-05-19 22:06:27,558 INFO waiting for app to die
+2016-05-19 22:06:30,565 INFO waiting for app to die
+2016-05-19 22:06:33,569 INFO waiting for app to die
+2016-05-19 22:06:36,574 INFO waiting for app to die
+2016-05-19 22:06:45,743 CRIT Supervisor running as root (no user in config file)
+2016-05-19 22:06:45,748 INFO supervisord started with pid 1
+2016-05-19 22:06:46,752 INFO spawned: 'app' with pid 10
+2016-05-19 22:06:47,960 INFO success: app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-05-19 22:07:08,149 WARN received SIGTERM indicating exit request
+2016-05-19 22:07:08,149 INFO waiting for app to die
+2016-05-19 22:07:11,156 INFO waiting for app to die
+2016-05-19 22:07:14,161 INFO waiting for app to die
+2016-05-19 22:07:17,166 INFO waiting for app to die
+2016-05-19 22:18:36,034 CRIT Supervisor running as root (no user in config file)
+2016-05-19 22:18:36,038 INFO supervisord started with pid 1
+2016-05-19 22:18:37,042 INFO spawned: 'app' with pid 9
+2016-05-19 22:18:38,281 INFO success: app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-05-19 22:19:16,010 WARN received SIGTERM indicating exit request
+2016-05-19 22:19:16,010 INFO waiting for app to die
+2016-05-19 22:19:19,020 INFO waiting for app to die
+2016-05-19 22:19:22,025 INFO waiting for app to die
+2016-05-19 22:19:25,029 INFO waiting for app to die
+2016-05-19 22:21:27,627 CRIT Supervisor running as root (no user in config file)
+2016-05-19 22:21:27,633 INFO supervisord started with pid 1
+2016-05-19 22:21:28,637 INFO spawned: 'app' with pid 9
+2016-05-19 22:21:30,264 INFO success: app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-05-19 22:22:27,047 WARN received SIGTERM indicating exit request
+2016-05-19 22:22:27,047 INFO waiting for app to die
+2016-05-19 22:22:30,056 INFO waiting for app to die
+2016-05-19 22:22:33,061 INFO waiting for app to die
+2016-05-19 22:22:36,066 INFO waiting for app to die
+2016-05-19 22:25:20,329 CRIT Supervisor running as root (no user in config file)
+2016-05-19 22:25:20,340 INFO supervisord started with pid 1
+2016-05-19 22:25:21,344 INFO spawned: 'app' with pid 10
+2016-05-19 22:25:22,570 INFO success: app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-05-19 22:26:52,620 WARN received SIGTERM indicating exit request
+2016-05-19 22:26:52,625 INFO waiting for app to die
+2016-05-19 22:46:28,264 CRIT Supervisor running as root (no user in config file)
+2016-05-19 22:46:28,271 INFO supervisord started with pid 1
+2016-05-19 22:46:29,275 INFO spawned: 'app' with pid 9
+2016-05-19 22:46:30,500 INFO success: app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-05-19 22:47:14,132 WARN received SIGTERM indicating exit request
+2016-05-19 22:47:14,133 INFO waiting for app to die
+2016-05-19 22:47:17,145 INFO waiting for app to die
+2016-05-19 22:47:20,149 INFO waiting for app to die
+2016-05-19 22:47:23,153 INFO waiting for app to die
+2016-05-19 22:50:26,861 CRIT Supervisor running as root (no user in config file)
+2016-05-19 22:50:26,867 INFO supervisord started with pid 1
+2016-05-19 22:50:27,872 INFO spawned: 'app' with pid 9
+2016-05-19 22:50:27,893 DEBG 'app' stdout output:
+*** Starting uWSGI 2.0.13.1 (64bit) on [Thu May 19 22:50:27 2016] ***
+compiled with version: 4.9.2 on 19 May 2016 22:49:44
+os: Linux-3.13.0-68-generic #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015
+nodename: 1a57e5845be1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /app
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 524288
+your memory page size is 4096 bytes
+detected max file descriptor number: 524288
+- async cores set to 100 - fd table size: 524288
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :9000 fd 3
+spawned uWSGI http 1 (pid: 10)
+uwsgi socket 0 bound to TCP address :3031 fd 6
+Python version: 3.5.1 (default, May 12 2016, 19:06:45)  [GCC 4.9.2]
+
+2016-05-19 22:50:27,922 DEBG 'app' stdout output:
+Python main interpreter initialized at 0xdb37b0
+
+2016-05-19 22:50:27,922 DEBG 'app' stdout output:
+python threads support enabled
+
+2016-05-19 22:50:27,922 DEBG 'app' stdout output:
+your server socket listen backlog is limited to 100 connections
+
+2016-05-19 22:50:27,923 DEBG 'app' stdout output:
+your mercy for graceful operations on workers is 60 seconds
+
+2016-05-19 22:50:27,923 DEBG 'app' stdout output:
+mapped 1092864 bytes (1067 KB) for 100 cores
+
+2016-05-19 22:50:27,924 DEBG 'app' stdout output:
+*** Operational MODE: async ***
+
+2016-05-19 22:50:28,102 DEBG 'app' stdout output:
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xdb37b0 pid: 9 (default app)
+
+2016-05-19 22:50:28,103 DEBG 'app' stdout output:
+*** uWSGI is running in multiple interpreter mode ***
+
+2016-05-19 22:50:28,103 DEBG 'app' stdout output:
+spawned uWSGI worker 1 (and the only) (pid: 9, cores: 100)
+
+2016-05-19 22:50:28,104 DEBG 'app' stdout output:
+*** running gevent loop engine [addr:0x48ebe0] ***
+
+2016-05-19 22:50:29,105 INFO success: app entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2016-05-19 22:50:53,290 DEBG 'app' stdout output:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/redis/connection.py", line 439, in connect
+
+2016-05-19 22:50:53,291 DEBG 'app' stdout output:
+    sock = self._connect()
+  File "/usr/local/lib/python3.5/site-packages/redis/connection.py", line 494, in _connect
+    raise err
+
+2016-05-19 22:50:53,293 DEBG 'app' stdout output:
+  File "/usr/local/lib/python3.5/site-packages/redis/connection.py", line 482, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+2016-05-19 22:50:53,294 DEBG 'app' stdout output:
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/redis/client.py", line 572, in execute_command
+
+2016-05-19 22:50:53,295 DEBG 'app' stdout output:
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.5/site-packages/redis/connection.py", line 563, in send_command
+    self.send_packed_command(self.pack_command(*args))
+
+2016-05-19 22:50:53,298 DEBG 'app' stdout output:
+  File "/usr/local/lib/python3.5/site-packages/redis/connection.py", line 538, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.5/site-packages/redis/connection.py", line 442, in connect
+
+2016-05-19 22:50:53,299 DEBG 'app' stdout output:
+    raise ConnectionError(self._error_message(e))
+
+2016-05-19 22:50:53,301 DEBG 'app' stdout output:
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/redis/connection.py", line 439, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.5/site-packages/redis/connection.py", line 494, in _connect
+
+2016-05-19 22:50:53,301 DEBG 'app' stdout output:
+    raise err
+  File "/usr/local/lib/python3.5/site-packages/redis/connection.py", line 482, in _connect
+
+2016-05-19 22:50:53,305 DEBG 'app' stdout output:
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/falcon/api.py", line 189, in __call__
+    responder(req, resp, **params)
+  File "/app/app.py", line 38, in on_get
+    ret = r.llen(work_queue)
+  File "/usr/local/lib/python3.5/site-packages/redis/client.py", line 1219, in llen
+    return self.execute_command('LLEN', name)
+  File "/usr/local/lib/python3.5/site-packages/redis/client.py", line 578, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.5/site-packages/redis/connection.py", line 563, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.5/site-packages/redis/connection.py", line 538, in send_packed_command
+    self.connect()
+  File "/usr/local/lib/python3.5/site-packages/redis/connection.py", line 442, in connect
+
+2016-05-19 22:50:53,305 DEBG 'app' stdout output:
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+2016-05-19 22:50:53,305 DEBG 'app' stdout output:
+[pid: 9|app: 0|req: 1/1] 172.18.0.1 () {28 vars in 305 bytes} [Thu May 19 22:50:53 2016] GET /tasks => generated 0 bytes in 29 msecs (HTTP/1.1 500) 0 headers in 0 bytes (1 switches on core 99)
+
+2016-05-19 22:51:10,450 WARN received SIGTERM indicating exit request
+2016-05-19 22:51:10,450 DEBG killing app (pid 9) with signal SIGTERM
+2016-05-19 22:51:10,450 INFO waiting for app to die
+2016-05-19 22:51:10,453 DEBG 'app' stdout output:
+Brutally killing worker 1 (pid: 9)...
+Thu May 19 22:51:10 2016 - stopping gevent signals watchers for worker 1 (pid: 9)...
+Thu May 19 22:51:10 2016 - stopping gevent sockets watchers for worker 1 (pid: 9)...
+Thu May 19 22:51:10 2016 - main gevent watchers stopped for worker 1 (pid: 9)...
+SystemError: null argument to internal routine
+
+During handling of the above exception, another exception occurred:
+
+SystemError: <built-in method stop of gevent.corecext.io object at 0x7ff5ce7fd0b8> returned a result with an error set
+
+During handling of the above exception, another exception occurred:
+
+SystemError: PyEval_EvalFrameEx returned a result with an error set
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/gevent/hub.py", line 295, in handle
+    self.handler(*self.args, **self.kwargs)
+SystemError: <built-in function uwsgi_gevent_unix_signal_int_handler> returned a result with an error set
+SystemError: null argument to internal routine
+
+During handling of the above exception, another exception occurred:
+
+SystemError: <built-in method stop of gevent.corecext.io object at 0x7ff5ce7fd0b8> returned a result with an error set
+
+During handling of the above exception, another exception occurred:
+
+SystemError: PyEval_EvalFrameEx returned a result with an error set
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/gevent/greenlet.py", line 494, in join
+
+2016-05-19 22:51:10,453 DEBG 'app' stdout output:
+    result = self.parent.switch()
+  File "/usr/local/lib/python3.5/site-packages/gevent/hub.py", line 606, in switch
+
+2016-05-19 22:51:10,454 DEBG 'app' stdout output:
+    return greenlet.switch(self)
+SystemError: <built-in function uwsgi_gevent_unix_signal_int_handler> returned a result with an error set
+
+2016-05-19 22:51:13,459 INFO waiting for app to die
+2016-05-19 22:51:16,464 INFO waiting for app to die

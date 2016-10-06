@@ -1,0 +1,46 @@
+version: '2'
+services:
+  redis:
+      image: redis:3.2.0
+      ports:
+        - 6379
+
+  nginx:
+    build: ./nginx
+    volumes:
+      - ./web:/var/www/html
+    links:
+        - worker1:worker1
+        - falcon:falcon
+    ports:
+        - 81:80
+    depends_on:
+        - worker1
+        - redis
+
+  falcon:
+    build: ./falcon
+    volumes:
+      - ./falcon:/app
+    environment: 
+        SOMETHING: 123
+    links:
+        - redis:redis
+    ports:
+        - 9000:9000
+    depends_on:
+        - redis
+    environment:
+        REDIS_HOST: redis
+
+  worker1:
+    build: ../worker
+    command: python mara-worker.py 1
+    volumes:
+      - ../worker:/code
+    links: 
+      - redis
+    environment:
+        REDIS_HOST: redis
+    depends_on:
+        - redis
