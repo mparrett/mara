@@ -2,7 +2,8 @@
 
 // Requires ImageMagick ext
 
-function _build_mount_atlas($mount_id) {
+function _build_mount_atlas($mount_id)
+{
     $mount_id = (int) $mount_id;
 
     $q = "SELECT * FROM mount_sprites WHERE mount_id = {$mount_id}";
@@ -11,8 +12,12 @@ function _build_mount_atlas($mount_id) {
     $w = 0;
     $h = 0;
     foreach ($sprites as $s) {
-        if ($s['w'] > $w) $w = $s['w'];
-        if ($s['h'] > $h) $h = $s['h'];
+        if ($s['w'] > $w) {
+            $w = $s['w'];
+        }
+        if ($s['h'] > $h) {
+            $h = $s['h'];
+        }
     }
 
     $count = count($sprites);

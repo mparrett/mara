@@ -3,8 +3,6 @@
 <?php
 $redis = new Redis();
 $conn = $redis->connect($_ENV['REDIS_HOST'], 6379);
-if (!$conn)
-{
+if (!$conn) {
     echo "Couldn't connect to redis";
 }
-
