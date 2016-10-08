@@ -88,9 +88,15 @@ def save(i):
     i.save('output.jpg')
 
 
-def test_gen(url):
-    r = requests.get(url)
+def test_gen(url = None):
+    if url is None:
+      print("Ooops, empty URL")
+      return
 
+    r = requests.get(url)
+    if r.status_code != requests.codes.ok:
+      print("Ooops, status code not OK: " + str(r.status_code))
+      return
 #'https://scontent.xx.fbcdn.net/v/t1.0-1/c0.12.457.457/s160x160/12994355_10154089814361407_1270883076140821763_n.jpg?oh=6f3c9e328749f4fff210a22ce3c12ad9&oe=57E7BB87')
     #print(r.status_code) # requests.codes.ok
     #print(len(r.text))

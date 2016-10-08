@@ -14,4 +14,4 @@ RUN cd /usr/src/php/ext \
 
 ADD . /var/www/html
 
-CMD ["php-fpm"]  
+CMD ["php-fpm"]

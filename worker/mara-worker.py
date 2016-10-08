@@ -3,11 +3,15 @@ import signal
 import sys
 import subprocess
 import os
+import logging
 
 from tasks.pillow_example import test_gen
 
+
+logging.basicConfig(filename='/var/log/mara-worker.log', level=logging.DEBUG)
+
 def signal_handler(signal, frame):
-    print('You pressed Ctrl+C!')
+    logging.info('You pressed Ctrl+C!')
     sys.exit(0)
 signal.signal(signal.SIGINT, signal_handler)
 
@@ -28,18 +32,20 @@ if len(sys.argv) >= 2:
 processing_queue = str(worker_id) + '-queue'
 work_queue = 'work'
 
-print("Worker ID " + str(worker_id) + " started")
+start_msg = "Worker ID " + str(worker_id) + " started"
+logging.info(start_msg)
+print(start_msg)
 
 while True:
-    print("Waiting on work queue")
+    logging.info("Waiting on work queue")
 
     task = r.brpoplpush(work_queue, processing_queue, 0)
     if task is None: 
-        print("Empty task. This should not happen")
+        logging.warning("Empty task. This should not happen")
         continue
 
-    print(task) # todo: check return?
-    print("Grabbed a task from the work queue into my processing queue")
+    logging.info(task) # todo: check return?
+    logging.info("Grabbed a task from the work queue into my processing queue")
    
     # Work on the task
     tasks = r.lrange(processing_queue, 0, 0)
@@ -50,22 +56,25 @@ while True:
     args = task_parts[1:]
 
     if cmd == 'test_gen':
-        print('Running test_gen with args ' + args[0])
-        test_gen(args[0])
+        logging.info('Running test_gen with args ' + ','.join(args))
+        test_gen(*args)
+        continue
 
     if cmd == 'test_sub':
-        print('Running ' + task)
+        logging.info('Running ' + task)
         try:
             output = subprocess.check_output(args)
             
-            print('Output ' + str(output))
+            logging.info('Output ' + str(output))
 
             removed = r.lrem(processing_queue, -1, task)
 
         except subprocess.CalledProcessError as e:
-            print('Command failed:')
-            print(str(e.returncode))
-            print(e.cmd)
-            print(e.output)
+            logging.warning('Command failed:')
+            logging.warning(str(e.returncode))
+            logging.warning(e.cmd)
+            logging.warning(e.output)
             # Todo: push to failed queue
+        continue
+    logging.info('Unknown command: ' + cmd)
 
