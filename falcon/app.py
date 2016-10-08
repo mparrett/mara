@@ -21,6 +21,7 @@ if password is not None:
 r = redis.StrictRedis(**opts)
 
 work_queue = 'work'
+processing_queue = 'processing-1'
 
 #logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 
@@ -45,9 +46,13 @@ class TaskResource:
     def on_get(self, req, resp):
         """Handles GET requests"""
         resp.status = falcon.HTTP_200  # This is the default status
-        ret = r.llen(work_queue)
+        ret_work = r.llen(work_queue)
+        ret_proc = r.llen(processing_queue)
+        queues = []
+        queues.append({'name': work_queue, 'items': ret_work})
+        queues.append({'name': processing_queue, 'items': ret_proc})
 
-        resp.body = json.dumps({'queue_name': work_queue, 'queue_size': ret})
+        resp.body = json.dumps(queues)
 
     def on_post(self, req, resp):
         """Handles POST requests"""
@@ -57,7 +62,7 @@ class TaskResource:
         ret = r.lpush(work_queue, fake_task)
         # Todo: exception handling
         resp.body = ('task added:' + fake_task + 
-            'work queue length: ' + str(ret))
+            'work queue length: ' + str(ret) + "\n")
 
 cors = falcon_cors.CORS(allow_origins_list=['pyzam.com', 'pyz.am', 'http://pyz.am'])
 falcon_cors.log.get_default_logger().setLevel(logging.DEBUG)

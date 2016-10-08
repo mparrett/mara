@@ -29,7 +29,7 @@ worker_id = 1
 if len(sys.argv) >= 2:
     worker_id = sys.argv[1]
 
-processing_queue = str(worker_id) + '-queue'
+processing_queue = 'processing-' + str(worker_id)
 work_queue = 'work'
 
 start_msg = "Worker ID " + str(worker_id) + " started"
@@ -44,11 +44,16 @@ while True:
         logging.warning("Empty task. This should not happen")
         continue
 
-    logging.info(task) # todo: check return?
+    logging.info(task)
     logging.info("Grabbed a task from the work queue into my processing queue")
    
+    # Grabbed a task into the processing queue. There could be some latency
+    # But usually not
+
+    # ...
+
     # Work on the task
-    tasks = r.lrange(processing_queue, 0, 0)
+    tasks = r.lrange(processing_queue, 0, 0) # Could just use "task" from above, pop when finished successfully
     task = tasks.pop().decode('ascii') # Is this decode correct?
     task_parts = task.split(' ')
     
